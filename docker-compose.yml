@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web:
+    build: ./web
+    restart: always
+    ports:
+      - "8080:3000"
+    depends_on:
+      - charts
+      - search
+      - images
+    links:
+      - charts
+      - search
+      - images
+  charts:
+    build: ./chartsService
+    restart: always
+  search:
+    build: ./searchService
+    restart: always
+  images:
+    build: ./imageService
+    restart: always
+      
+     
+    
