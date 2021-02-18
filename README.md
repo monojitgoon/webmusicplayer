@@ -1,3 +1,7 @@
+# WebMusicPlayer -Service Oriented Architecture Assignment
+
+A web music player implementing three microservices(Search, Charts, Images) packaged inside their own Docker container
+
 
 # Docker:
  
